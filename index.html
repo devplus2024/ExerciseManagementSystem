@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWord</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="script/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Đặt màu mặc định cho liên kết */
+      a {
+        padding: 5px;
+      }
+
+      /* Đặt màu đỏ cho liên kết khi đang ở trang chủ */
+      body.home a[href="index.html"] {
+        color: blue;
+      }
+
+      /* Đặt màu đỏ cho liên kết khi đang ở trang về chúng tôi */
+      body.class-9 a[href="class-9.html"] {
+        color: blue;
+        transition-delay: 5s;
+      }
+    </style>
+  </head>
+  <body class="bg-white home">
+    <nav class="mx-4 my-8">
+      <div class="p-8 shadow-2xl rounded-2xl text-center bg-white">
+        <div class="inline-block">
+          <a
+            href="index.html"
+            class="a-CL text-2xl mr-4 font-medium hover:decoration-yellow-800 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-500"
+            >Home</a
+          >
+          <a
+            href="class-9.html"
+            class="a-CL text-2xl hover:text-teal-500 mr-4 font-medium bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-500"
+            >Class 9</a
+          >
+        </div>
+        <div class="inline-block float-right flex">
+          <div class="">
+            <a href="login.html">
+              <button
+                class="mx-auto text-2xl mr-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500"
+              >
+                Login
+              </button>
+            </a>
+          </div>
+          <div>
+            <a href="register.html">
+              <button
+                class="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500"
+              >
+                Register
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

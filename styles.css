@@ -1,0 +1,73 @@
+a:active {
+  color: red;
+}
+
+#div-EX {
+  position: relative;
+}
+
+.New-Exersice {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  padding: 0px 5px;
+  box-shadow: none;
+}
+.Name-Subject {
+  position: absolute;
+  top: -15px;
+  left: 100px;
+  padding: 0px 5px;
+  box-shadow: none;
+}
+
+.Logo {
+  position: absolute;
+  top: -30px;
+  left: 235px;
+  padding: 0px 5px;
+  box-shadow: none;
+}
+
+.gg-log-in {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 6px;
+  height: 16px;
+  border: 2px solid;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-right: -10px;
+  font-weight: 800px;
+
+}
+
+.gg-log-in::after,
+.gg-log-in::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-log-in::after {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  left: -8px;
+  bottom: 2px;
+}
+
+.gg-log-in::before {
+  border-radius: 3px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  left: -11px;
+  bottom: 5px;
+}
